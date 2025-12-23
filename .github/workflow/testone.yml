@@ -1,0 +1,15 @@
+
+name: test one workflow
+
+on: 
+  push:
+    branches: ["main"]
+
+jobs: 
+    test-one:
+      runs-on: ubuntu-latest
+      steps:
+        - name: print a greeting
+          run: echo "Hello world"
+        - name: print bye
+          run: echo "job done. Bye"
